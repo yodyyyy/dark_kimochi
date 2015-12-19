@@ -9,7 +9,7 @@
 title: Spaghetti-san Blog
 email: spaghettisan@yahoo.com
 description: > # this means to ignore newlines until "baseurl:"
-  Every my incoming project i posted here.
+  All about anything from Spaghetti-san
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://spaghetti-san.github.io" # the base hostname & protocol for your site
 twitter_username: axlyody
