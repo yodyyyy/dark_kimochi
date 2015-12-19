@@ -15,6 +15,6 @@ By the way i'm just a freelance and work a project from home with only laptop an
 
 
 
-Feel free to contact me on [Facebook](https://www.facebook.com/profile.php?id=100007594726461), don't be hesitate.
+Feel free to contact me on [Facebook](https://www.facebook.com/profile.php?id=100007594726461), don't be hesitate to ask, also you can add me :)).
 
 
