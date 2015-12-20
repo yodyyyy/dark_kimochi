@@ -10,7 +10,7 @@ permalink: /about/
 Spaghetti-san a.k.a. Axl Yody
 
 
-I am Axl, a UI Designer, Front End Developer, Illustrator, and of course Anime and Manga lovers from Indonesian.
+I am Axl, a UI Designer, Front End Developer, Illustrator, and of course Anime and Visual Novel lovers from Indonesian.
 Living in Jakarta, and studied at Bina Sarana Informatika.
 I love my work and enjoy each new project as I get it.
 By the way i'm just a freelance and work a project from home with only laptop and figurine beside my laptop.
