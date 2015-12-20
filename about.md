@@ -5,6 +5,7 @@ permalink: /about/
 ---
 <h1>スパゲッティさん</h1>
 <br>
+<br>
 <img src="https://avatars2.githubusercontent.com/u/8794792?v=3&s=180">
 <br>
 Spaghetti-san a.k.a. Axl Yody
