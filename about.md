@@ -4,10 +4,9 @@ title: About
 permalink: /about/
 ---
 
-<p>
 <img src="https://avatars2.githubusercontent.com/u/8794792?v=3&s=180">
-</p>
 
+<br>
 Spaghetti-san a.k.a. Axl Yody
 
 
