@@ -16,5 +16,6 @@ I was working at this moment, and project is under maintained.
 Facebook (Fanspage): [https://www.facebook.com/M.C.Nime.Id](https://www.facebook.com/M.C.Nime.Id)
 
 You can grab this project source code from GitHub
-[SpagheScript](https://github.com/spaghetti-san/spaghescript)
+<br>
+[Download SpagheScript](https://github.com/spaghetti-san/spaghescript)
 
