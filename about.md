@@ -8,7 +8,7 @@ permalink: /about/
 <img src="https://avatars2.githubusercontent.com/u/8794792?v=3&s=180">
 </p>
 <br>
-<br>
+
 Spaghetti-san a.k.a. Axl Yody
 
 
