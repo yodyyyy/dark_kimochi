@@ -16,7 +16,8 @@ Demo: [http://flatten01.tumblr.com](http://flatten01.tumblr.com)
 
 
 
-<h3>How to install?</h2>
+<h3>How to install?</h3>
+<br>
 Just copy this code and paste into your tumblr html editor
-
-Download: [Theme file](https://raw.githubusercontent.com/spaghetti-san/pettanko/master/pettanko.html}
+<br>
+Download: [Theme file](https://raw.githubusercontent.com/spaghetti-san/pettanko/master/pettanko.html)
