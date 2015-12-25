@@ -788,7 +788,7 @@ body.nav-opened .nav {
     display: inline-block;
     float: right;
     height: 38px;
-    padding: 0 15px;
+    padding: 20px 15px;
     border-style: solid;
     border-width: 1px;
     opacity: 1;
@@ -801,14 +801,14 @@ body.nav-opened .nav {
     transition: all 0.5s ease;
 }
 .menu-button:before {
-    font-size: 12px;
+    font-size: 25px;
     font-weight: bold;
     margin-right: 6px;
     position: relative;
     top: 1px;
 }
 .menu-button:hover {
-    background: #fff;
+    /* background: #fff; */
 }
 .menu-button:focus {
     outline: 0;
@@ -817,10 +817,10 @@ body.nav-opened .nav {
 /* When the navigation is closed */
 .nav-closed .menu-button {
     color: #fff;
-    border-color: rgba(255, 255, 255, 0.6);
+    border-color: transparent;
 }
 .nav-closed .menu-button:hover {
-    color: #222;
+    color: #fff;
 }
 
 /* When the navigation is closed and there is no cover image */
@@ -835,13 +835,13 @@ body.nav-opened .nav {
 
 /* When the navigation is opened */
 .nav-opened .menu-button {
-    padding: 0 12px;
+    padding: 5px 56px 0px 10px;
     background: #111;
     border-color: #111;
     color: #fff;
     -webkit-transform: translate3D(94px, 0, 0);
-        -ms-transform: translate3D(94px, 0, 0);
-            transform: translate3D(94px, 0, 0);
+    -ms-transform: translate3D(94px, 0, 0);
+    transform: translate3D(94px, 0, 0);
     transition: all 0.3s ease;
 }
 
@@ -1774,7 +1774,7 @@ body:not(.post-template) .post-title {
     }
 
     .menu-button {
-        padding: 0 5px;
+        padding: 13px 12px;
         border-radius: 0;
         border-width: 0;
         color: #2e2e2e;
