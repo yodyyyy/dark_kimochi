@@ -34,9 +34,9 @@ audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden], template { display: none; }
 html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+   font-family: sans-serif;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
 }
 body { margin: 0; }
 a { background: transparent; }
@@ -47,9 +47,9 @@ abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: 700; }
 dfn { font-style: italic; }
 hr {
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    height: 0;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+   height: 0;
 }
 mark { background: #FF0; color: #000; }
 code, kbd, pre,
@@ -58,10 +58,10 @@ pre { white-space: pre-wrap; }
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 small { font-size: 80%; }
 sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
 }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
@@ -69,9 +69,9 @@ img { border: 0; }
 svg:not(:root) { overflow: hidden; }
 figure { margin: 0; }
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+   border: 1px solid #c0c0c0;
+   margin: 0 2px;
+   padding: 0.35em 0.625em 0.75em;
 }
 legend { border: 0; padding: 0; }
 button, input, select,
@@ -80,17 +80,17 @@ button, input { line-height: normal; }
 button, select { text-transform: none; }
 button, html input[type="button"],
 input[type="reset"], input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
+   -webkit-appearance: button;
+   cursor: pointer;
 }
 button[disabled], html input[disabled] { cursor: default; }
 input[type="checkbox"],
 input[type="radio"] { box-sizing: border-box; padding: 0; }
 input[type="search"] {
-    -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+   -webkit-appearance: textfield;
+   -moz-box-sizing: content-box;
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
@@ -109,9 +109,9 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-family: "casper-icons";
     src:url("../fonts/casper-icons.eot?v=1");
     src:url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"),
-    url("../fonts/casper-icons.woff?v=1") format("woff"),
-    url("../fonts/casper-icons.ttf?v=1") format("truetype"),
-    url("../fonts/casper-icons.svg?v=1#icons") format("svg");
+        url("../fonts/casper-icons.woff?v=1") format("woff"),
+        url("../fonts/casper-icons.ttf?v=1") format("truetype"),
+        url("../fonts/casper-icons.svg?v=1#icons") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -381,8 +381,8 @@ kbd {
     background: #F4F4F4;
     border-radius: 4px;
     box-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.2),
-    0 1px 0 0 #fff inset;
+        0 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 0 0 #fff inset;
 }
 
 table {
@@ -425,7 +425,7 @@ table tbody > tr:nth-child(odd) > th {
 
 table.plain tbody > tr:nth-child(odd) > td,
 table.plain tbody > tr:nth-child(odd) > th {
-    background: transparent;
+   background: transparent;
 }
 
 iframe, .fluid-width-video-wrapper {
@@ -481,16 +481,16 @@ margin on the iframe, cause it breaks stuff. */
     min-height: 100%;
     background: #fff;
     -webkit-transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
+            transition: transform 0.5s ease;
 }
 
 body.nav-opened .site-wrapper {
     overflow-x: hidden;
     -webkit-transform: translate3D(-240px, 0, 0);
-    -ms-transform: translate3D(-240px, 0, 0);
-    transform: translate3D(-240px, 0, 0);
+        -ms-transform: translate3D(-240px, 0, 0);
+            transform: translate3D(-240px, 0, 0);
     -webkit-transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
+            transition: transform 0.3s ease;
 }
 
 
@@ -549,26 +549,26 @@ body.nav-opened .nav-cover {
     text-align: left;
     overflow-y: auto;
     -webkit-transition: -webkit-transform 0.5s ease,
-    opacity 0.3s ease 0.7s;
-    transition: transform 0.5s ease,
-    opacity 0.3s ease 0.7s;
+                        opacity 0.3s ease 0.7s;
+            transition: transform 0.5s ease,
+                        opacity 0.3s ease 0.7s;
 }
 
 body.nav-closed .nav {
     -webkit-transform: translate3D(97px, 0, 0);
-    -ms-transform: translate3D(97px, 0, 0);
-    transform: translate3D(97px, 0, 0);
+        -ms-transform: translate3D(97px, 0, 0);
+            transform: translate3D(97px, 0, 0);
 }
 
 body.nav-opened .nav {
     opacity: 1;
     -webkit-transition: -webkit-transform 0.3s ease,
-    opacity 0s ease 0s;
-    transition: transform 0.3s ease,
-    opacity 0s ease 0s;
+                        opacity 0s ease 0s;
+            transition: transform 0.3s ease,
+                        opacity 0s ease 0s;
     -webkit-transform: translate3D(0, 0, 0);
-    -ms-transform: translate3D(0, 0, 0);
-    transform: translate3D(0, 0, 0);
+        -ms-transform: translate3D(0, 0, 0);
+            transform: translate3D(0, 0, 0);
 }
 
 .nav-title {
@@ -605,19 +605,19 @@ body.nav-opened .nav {
     background: rgb(150,150,150);
     top: 15px;
     -webkit-transition: background 0.15s ease;
-    transition: background 0.15s ease;
+            transition: background 0.15s ease;
 }
 
 .nav-close:before {
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .nav-close:after {
     -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .nav-close:hover:before,
@@ -840,8 +840,8 @@ body.nav-opened .nav {
     border-color: #111;
     color: #fff;
     -webkit-transform: translate3D(94px, 0, 0);
-    -ms-transform: translate3D(94px, 0, 0);
-    transform: translate3D(94px, 0, 0);
+        -ms-transform: translate3D(94px, 0, 0);
+            transform: translate3D(94px, 0, 0);
     transition: all 0.3s ease;
 }
 
@@ -919,26 +919,26 @@ body.nav-opened .nav {
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    /*border-bottom: #EBF2F6 1px solid;*/
+    border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
-/*.post:after {*/
-    /*display: block;*/
-    /*content: "";*/
-    /*width: 7px;*/
-    /*height: 7px;*/
-    /*border: #E7EEF2 1px solid;*/
-    /*position: absolute;*/
-    /*bottom: -5px;*/
-    /*left: 50%;*/
-    /*margin-left: -5px;*/
-    /*background: #FFF;*/
-    /*border-radius: 100%;*/
-    /*box-shadow: #FFF 0 0 0 5px;*/
-/*}*/
+.post:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
+}
 
 body:not(.post-template) .post-title {
     font-size: 3.6rem;
@@ -1043,7 +1043,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .post-template .post-header {
-    margin-bottom: 3.4rem;
+   margin-bottom: 3.4rem;
 }
 
 .post-template .post-title {
@@ -2036,29 +2036,29 @@ body:not(.post-template) .post-title {
 @-webkit-keyframes bounce {
     0%, 10%, 25%, 40%, 50% {
         -webkit-transform: translateY(0) rotate(-90deg);
-        transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
     }
     20% {
         -webkit-transform: translateY(-10px) rotate(-90deg);
-        transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
     }
     30% {
         -webkit-transform: translateY(-5px) rotate(-90deg);
-        transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
     }
 }
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         -webkit-transform: translateY(0) rotate(-90deg);
-        transform: translateY(0) rotate(-90deg);
+                transform: translateY(0) rotate(-90deg);
     }
     40% {
         -webkit-transform: translateY(-10px) rotate(-90deg);
-        transform: translateY(-10px) rotate(-90deg);
+                transform: translateY(-10px) rotate(-90deg);
     }
     60% {
         -webkit-transform: translateY(-5px) rotate(-90deg);
-        transform: translateY(-5px) rotate(-90deg);
+                transform: translateY(-5px) rotate(-90deg);
     }
 }
 
