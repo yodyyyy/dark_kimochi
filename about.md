@@ -1,14 +1,22 @@
 ---
 layout: page
 title: About
-class: 'post'
-navigation: True
-logo: 'assets/images/ghost.png'
-current: about
+permalink: /about/
 ---
 
-This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
+<img src="https://avatars2.githubusercontent.com/u/8794792?v=3&s=180">
 
-We use this for testing and for reference!
+<br>
+Spaghetti-san a.k.a. Axl Yody
 
-If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign up.
+
+I am Axl, a UI Designer, Front End Developer, Illustrator, and of course Anime and Visual Novel lovers from Indonesian.
+Living in Jakarta, and studied at Bina Sarana Informatika.
+I love my work and enjoy each new project as I get it.
+By the way i'm just a freelance and work a project from home with only laptop and figurine beside my laptop.
+
+
+
+Feel free to contact me on [Facebook](https://www.facebook.com/profile.php?id=100007594726461), don't be hesitate to ask, also you can add me :))
+
+
