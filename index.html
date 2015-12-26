@@ -29,13 +29,13 @@ layout: default
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
   {% else %}
-    <span class="previous">Previous</span>
+    <span class="previous" align="left">Previous</span>
   {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   {% else %}
-    <span class="next ">Next</span>
+    <span class="next" align="right">Next</span>
   {% endif %}
 </div>
 
@@ -43,21 +43,7 @@ layout: default
 </div>
 
 
-<div class="widgets">
-	  		<h2>Tags</h2>
-<ul class="tags" style="padding:0">
-	  {% for tag in site.tags %}
-	  
-  <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
-    <a href="tags/#{{ tag | first | slugize }}">
-      {{ tag | first }}
-      <span>{{ tag | last | size }}</span>
-    </a>
-  </li>
-{% endfor %}
-</ul>
-  
-	  	</div>
+{% include widgets.html %}
 
 
 </div>

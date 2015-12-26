@@ -184,10 +184,7 @@
     }
 }
 
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
+
 
 .post-link {
     display: block;
@@ -200,9 +197,8 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 20px;
 }
-
 .post-title {
     font-size: 25px;
     letter-spacing: -1px;
@@ -210,7 +206,7 @@
     color:#000;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 24px;
     }
 }
 

@@ -36,7 +36,10 @@
 
       <div class="footer-col footer-col-3">
         <p>Every my incoming project i posted here.</p>
-        <p>Hosted by <a href="https://github.com">GitHub</a></p>
+        <p>Hosted by <a href="https://github.com"><img src="/image/github_logo.png" style="
+    height: 30px;
+    padding-bottom: 2px;
+"></a></p>
       </div>
     </div>
 
@@ -55,17 +58,16 @@
     $(document).pjax('a', 'body', { 
         
         fragment: 'body', 
-        timeout: 10000
+        timeout: 2000
        
     });
-});
-Pace.on("start", function(){
+   });
+   Pace.on("start", function(){
     $(".pacel").show();
-});
-
-Pace.on("done", function(){
+   });
+   Pace.on("done", function(){
     $(".pacel").hide();
-});
+   });
   </script>
   
 

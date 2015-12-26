@@ -210,26 +210,87 @@ pre {
 /**
  * Column Home
  */
- 
+
+ .post-header .post-title a {
+    font-size: 20px;
+}
+ .post-excerpt p {
+    font-size: 14px;
+}
+.post-meta {
+    font-size: 10px;
+    color: $grey-color;
+}
+.post {
+    position: relative;
+    
+    margin: 0.5rem auto;
+    padding-bottom: 0.5rem;
+    border-bottom: #E8E8E8 1px solid;
+    word-wrap: break-word;
+} 
+.pagination {
+    margin-top:20px;
+    padding-bottom:40px;
+}
+.tags-date {
+    float: right;
+    margin-top: -35px; font-size: 12px;
+    color: #828282;
+}  
+.tags-pagee {
+        border-bottom: 1px solid #e8e8e8;
+    padding: 0 0 70px;
+}
  @media screen and (min-width: 47.5em) {
+.tags-pagee {
+        border-bottom: 1px solid #e8e8e8;
+    padding: 0 0 40px;
+}
+.tags-date {
+    float: right;
+    margin-top: -40px; font-size: 12px;
+    color: #828282;
+}     
+.post {
+    position: relative;
+    margin: 2rem auto;
+    padding-bottom: 1rem;
+    border-bottom: #E8E8E8 1px solid;
+    word-wrap: break-word;
+}
 .home {
     margin-right: 19.5em;
+   border-right: 1px solid #e8e8e8;
+   padding-right: 30px;
       }
  .widgets {
     position: absolute;
     top: 0;
     right: 0;
     width: 18.75em;
- }      
+    padding-botom: 0;
+ }   
+ .post-header .post-title a {
+    font-size:1em;
+ }
+  .post-excerpt p {
+    font-size: 16px;
+}
+ .post-meta {
+    font-size: 12px;
+    color: $grey-color;
+}
+.pagination {
+    padding-bottom:40px;
+}
+
 }
 .home {
     margin-bottom: .5em;
-    padding-right: 30px;
-    border-right: 1px solid #e8e8e8;
 }
-.home, .widgets {
-    
-  
+.widgets {
+    padding-bottom: 50px;
 }
 
 
@@ -257,14 +318,7 @@ pre {
     box-shadow: #fdfdfd 0 0 0 5px;
 }
 
-.post {
-    position: relative;
-    
-    margin: 2rem auto;
-    padding-bottom: 2rem;
-    border-bottom: #E8E8E8 1px solid;
-    word-wrap: break-word;
-}
+
 
 .tags li {
     position: relative;
@@ -349,4 +403,22 @@ pre {
     text-transform: uppercase;
     
     white-space: nowrap;
+}
+
+.pagination span, .pagination a {
+    font-size: 16px;
+    border: 1px solid #e8e8e8;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: #969696;
+}
+.pagination span.previous, .pagination a.previous {
+    float: left;
+}
+.pagination span.next, .pagination a.next {
+    float: right;
+}
+.pagination a {
+    color:#2F2F2F;
+    border-color:#2F2F2F;
 }

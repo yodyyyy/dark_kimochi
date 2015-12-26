@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<div style="margin: 1rem auto;">
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -32,3 +34,20 @@ layout: default
     </ul>
 {% endfor %}
 </article>
+
+<div class="arrowNav">
+ 
+{% if page.previous.url %} 
+<div class="arrowLeft">
+<a href="{{page.previous.url}}"><i class="fa fa-chevron-left"></i></a>
+</div>
+{% endif %}
+
+{% if page.next.url %} 
+<div class="arrowRight">
+<a href="{{page.next.url}}"><i class="fa fa-chevron-right"></i></a>
+</div>
+{% endif %}
+</div>
+
+</div>

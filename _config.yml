@@ -19,8 +19,8 @@ facebook_username:  profile.php?id=100007594726461
 # Gems
 gems: [jekyll-paginate]
 
-# Conig
-paginate: 3
+# Config
+paginate: 2
 paginate_path: "page/:num"
 # Build settings
 markdown: kramdown
