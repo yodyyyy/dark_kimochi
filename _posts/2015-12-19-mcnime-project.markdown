@@ -3,6 +3,9 @@ layout: post
 title:  "M.C Nime Website"
 date:   2015-12-19 01:00:00 +0000
 categories: web
+tags:
+- jekyll
+- example
 ---
 
 

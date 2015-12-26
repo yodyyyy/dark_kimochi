@@ -43,3 +43,30 @@
   </div>
 
 </footer>
+
+
+<!--- Where Javascript Load --->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.js"></script>
+<script type="text/javascript" src="//github.hubspot.com/pace/pace.js"></script>
+
+ <script type="text/javascript">
+   $(function() {
+    $(document).pjax('a', 'body', { 
+        
+        fragment: 'body', 
+        timeout: 10000
+       
+    });
+});
+Pace.on("start", function(){
+    $(".pacel").show();
+});
+
+Pace.on("done", function(){
+    $(".pacel").hide();
+});
+  </script>
+  
+
+
