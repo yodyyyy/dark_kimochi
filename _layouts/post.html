@@ -35,6 +35,178 @@ layout: default
 {% endfor %}
 </article>
 
+
+
+
+<style>
+ #contact-form {
+    text-shadow: 0 1px 0 #FFF;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding: 25px;
+}
+#contact-form h3 {
+	color:#000;
+	display:block;
+	font-size:28px;
+}
+#contact-form h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+#contact-form label span {
+	cursor:pointer;
+	color:#000;
+	display:block;
+	margin:5px 0;
+	font-weight:100;
+	font-size:13px;
+}
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="url"], #contact-form textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 2px;
+}
+#contact-form input[type="text"]:hover,
+#contact-form input[type="email"]:hover,
+#contact-form input[type="tel"]:hover,
+#contact-form input[type="url"]:hover,
+#contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+}
+#contact-form button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#991D57;
+	background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+	background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+	background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+	background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+</style>
+
+
+<style>
+    .demo-table {width: 100%;border-spacing: initial;margin: 20px 0px;word-break: break-word;table-layout: auto;line-height:1.8em;color:#333;}
+.demo-table th {background: #999;padding: 5px;text-align: left;color:#FFF;}
+.demo-table td {border-bottom: #f0f0f0 1px solid;background-color: #ffffff;padding: 5px;}
+.demo-table td div.feed_title{text-decoration: none;color:#00d4ff;font-weight:bold;}
+.demo-table ul{margin:0;padding:0;}
+.demo-table li{cursor:pointer;list-style-type: none;display: inline-block;color: #F0F0F0;text-shadow: 0 0 1px #666666;font-size:20px;}
+.demo-table .highlight, .demo-table .selected {color:#F4B30A;text-shadow: 0 0 1px #F48F0A;}
+.demo-table{display:none;}
+.btnRead{padding:10px;background-color:#09F;border:0;color:#FFF;}
+</style>
+
+</style>
+
+<script>
+window.onload = function(e) {
+	$.getJSON("http://spaghetti-chan.herokuapp.com/r.php?spaghetti=json",function(data){	
+		if(data) {
+		var json_data;
+		$('#read-data').hide();
+		$('.demo-table').show();
+		$.each(data.sessions, function(i,tutorial){
+		json_data = '<tr>'+
+			'<td valign="top">'+
+			'<div class="feed_title">'+tutorial.name+'</div>'+
+			'<div>'+tutorial.comment+'</div>'+
+			'</td>'+
+			'</tr>';
+		$(json_data).appendTo('#demo-table-content');
+		});
+		} else {
+		json_data += '<tr>'+
+			'<td valign="top">No Tutorials Found</td>'+
+			'</tr>';
+		$(json_data).appendTo('#demo-table-content');
+		}		
+	});	
+
+}
+</script>
+
+<table class="demo-table">
+<tbody id="demo-table-content">
+<tr>
+<th><strong>Tutorials</strong></th>
+</tr>
+</tbody>
+</table>
+
+
+
+
+<form id="contact-form" action="http://spaghetti-chan.herokuapp.com/r.php?spaghetti=sendcomment" method="post">
+			<h3>Comments</h3>
+			
+			<input type="hidden" name="redirect_to" value="/" />
+            <input type="hidden" name="path" value="{{page.url}}" />
+			<div>
+				<label>
+					<span>Name: (required)</span>
+					<input type="text" name="name" tabindex="1" required autofocus>
+				</label>
+			</div>
+		
+			<div>
+				<label>
+					<span>Website:</span>
+					<input type="url" name="url" tabindex="4" required>
+				</label>
+			</div>
+				<div>
+				<label>
+					<span>Email:</span>
+					<input type="email" name="email" tabindex="4" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Message: (required)</span>
+					<textarea tabindex="5" name="comment" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button name="submit" type="submit" id="contact-submit">Send Email</button>
+			</div>
+		</form>
+
+
+
 <div class="arrowNav">
  
 {% if page.previous.url %} 
