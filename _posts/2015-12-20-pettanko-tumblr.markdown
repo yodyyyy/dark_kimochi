@@ -4,8 +4,8 @@ title:  "Pettanko Tumblr Theme"
 date:   2015-12-20 01:00:00 +0000
 categories: themes
 tags:
-- gatel
-- tes
+- tumblr
+- themes
 ---
 
 
