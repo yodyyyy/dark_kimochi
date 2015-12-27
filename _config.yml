@@ -20,7 +20,7 @@ facebook_username:  profile.php?id=100007594726461
 gems: [jekyll-paginate]
 
 # Config
-paginate: 2
+paginate: 3
 paginate_path: "page/:num"
 # Build settings
 markdown: kramdown
