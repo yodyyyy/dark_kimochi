@@ -1,4 +1,4 @@
-var gulp        = require('gulp','gulp-remote-src');
+var gulp        = require('gulp');
 var deploy      = require('gulp-gh-pages');
 var http = require('http');
 var fs = require('fs');
