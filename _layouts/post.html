@@ -35,7 +35,24 @@ layout: default
 {% endfor %}
 </article>
 
-
+<ul class="listing comments">
+  {% for comment in site.data.comments.sessions %}
+    {% if comment.path == page.url %}
+    <li>
+      <img src="{{ comment.avatar }}" alt="{{ comment.name }}">
+      <time datetime="{{ comment.created | date_to_xmlschema }}">{{ comment.created | date_to_long_string  }}</time>
+      {% if comment.url %}
+        <a href="{{ comment.url }}" class="commenter">{{ comment.name }}</a>
+      {% else %}
+        <span class="commenter">{{ comment.name }}</span>
+      {% endif %}
+      <div>
+        {{ comment.comment }}
+      </div>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
 
 
 <style>
@@ -116,57 +133,6 @@ layout: default
 	border:1px solid #999;
 }
 </style>
-
-
-<style>
-    .demo-table {width: 100%;border-spacing: initial;margin: 20px 0px;word-break: break-word;table-layout: auto;line-height:1.8em;color:#333;}
-.demo-table th {background: #999;padding: 5px;text-align: left;color:#FFF;}
-.demo-table td {border-bottom: #f0f0f0 1px solid;background-color: #ffffff;padding: 5px;}
-.demo-table td div.feed_title{text-decoration: none;color:#00d4ff;font-weight:bold;}
-.demo-table ul{margin:0;padding:0;}
-.demo-table li{cursor:pointer;list-style-type: none;display: inline-block;color: #F0F0F0;text-shadow: 0 0 1px #666666;font-size:20px;}
-.demo-table .highlight, .demo-table .selected {color:#F4B30A;text-shadow: 0 0 1px #F48F0A;}
-.demo-table{display:none;}
-.btnRead{padding:10px;background-color:#09F;border:0;color:#FFF;}
-</style>
-
-</style>
-
-<script>
-window.onload = function(e) {
-	$.getJSON("http://spaghetti-chan.herokuapp.com/r.php?spaghetti=json",function(data){	
-		if(data) {
-		var json_data;
-		$('#read-data').hide();
-		$('.demo-table').show();
-		$.each(data.sessions, function(i,tutorial){
-		json_data = '<tr>'+
-			'<td valign="top">'+
-			'<div class="feed_title">'+tutorial.name+'</div>'+
-			'<div>'+tutorial.comment+'</div>'+
-			'</td>'+
-			'</tr>';
-		$(json_data).appendTo('#demo-table-content');
-		});
-		} else {
-		json_data += '<tr>'+
-			'<td valign="top">No Tutorials Found</td>'+
-			'</tr>';
-		$(json_data).appendTo('#demo-table-content');
-		}		
-	});	
-
-}
-</script>
-
-<table class="demo-table">
-<tbody id="demo-table-content">
-<tr>
-<th><strong>Tutorials</strong></th>
-</tr>
-</tbody>
-</table>
-
 
 
 
