@@ -236,62 +236,33 @@ layout: default
 }
 </style>
 
+<style>
+    #disqus_thread {
+  overflow: hidden;
 
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+</style>
+<div id="disqus_thread"></div>
+<script>
 
-<form id="contact-form" action="http://spaghetti-chan.herokuapp.com/r.php?spaghetti=sendcomment" method="post">
-			<h3>Comments</h3>
-			
-			<input type="hidden" name="redirect_to" value="/" />
-            <input type="hidden" name="path" value="{{page.url}}" />
-			<div>
-				<label>
-					<span>Name: (required)</span>
-					<input type="text" name="name" tabindex="1" required>
-				</label>
-			</div>
-		
-			<div>
-				<label>
-					<span>Website:</span>
-					<input type="url" name="url" tabindex="4" required>
-				</label>
-			</div>
-				<div>
-				<label>
-					<span>Email:</span>
-					<input type="email" name="email" tabindex="4" required>
-				</label>
-			</div>
-			<div>
-				<label>
-					<span>Message: (required)</span>
-					<textarea tabindex="5" name="comment" required></textarea>
-				</label>
-			</div>
-			<div>
-				<button name="submit" type="submit" id="contact-submit">Write Comment</button>
-			</div>
-		</form>
+var disqus_config = function () {
+this.page.url = spaghetti.ga; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = {{page.id}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
 
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
 
+s.src = '//spaghettisan.disqus.com/embed.js';
 
- <section class="comments">
-     {% for comment in site.data.comments.sessions %}
-    {% if comment.path == page.url %}
-    <article class="comment">
-      <a class="comment-img" href="#non">
-        <img src="http://spaghetti-chan.herokuapp.com/img.php?email={{ comment.email }}" alt="" width="50" height="50">
-      </a>
-      <div class="comment-body">
-        <div class="text">
-          <p>{{ comment.comment }}</p>
-        </div>
-        <p class="attribution">by <a href="{{ comment.url }}">{{ comment.name }}</a> at {{ comment.created | date_to_long_string  }}</p>
-      </div>
-    </article>
-    {% endif %}
-  {% endfor %}  
-  </section>
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 
  

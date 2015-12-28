@@ -73,11 +73,14 @@
         .trigger {
             clear: both;
             display: none;
+    padding-bottom: 5px;
+    z-index: 999;
+    position: relative;
+    background-color: #fdfdfd;
         }
 
         &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
+            
         }
 
         .page-link {
@@ -236,4 +239,46 @@
             font-size: 18px;
         }
     }
+}
+
+a.page-link {
+    position: relative;
+        -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+a.page-link:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0px;
+	width: 100%;
+	top:36px;
+	border-bottom: 3px solid transparent; 
+	transition: 0.5s ease;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+a.page-link:hover:after {
+    
+   border-bottom: 2px solid black;
+    
+   
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
