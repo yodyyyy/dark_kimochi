@@ -8,7 +8,7 @@ tags:
 ---
 
 
-Nekopara vol. 2 will release next year on February but no exact date
+Nekopara vol. 2 will release on February but no exact date.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SA4t-uiccCA" frameborder="0" allowfullscreen></iframe>
 <br>
