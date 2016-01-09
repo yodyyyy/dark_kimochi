@@ -1,10 +1,10 @@
 
- on
+
   {% if post %}
     {% assign tags = post.tags %}
   {% else %}
     {% assign tags = page.tags %}
   {% endif %}
   {% for tag in tags %}
-  <a href="/tags/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %},{% endunless %}
+  <a href="/tags/#{{tag|slugize}}"><i class="fa fa-hashtag"></i> {{tag}}</a>{% unless forloop.last %} {% endunless %}
   {% endfor %}

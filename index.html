@@ -18,7 +18,7 @@ layout: default
         
         
         <p class="post-tags">{% include post-tags.html %}</p>
-        <time class="post-date" datetime="1948-12-12">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <time class="post-date" datetime="1948-12-12"><i class="fa fa-calendar-minus-o"></i> {{ post.date | date: "%b %-d, %Y" }}</time>
     </footer>
 </article>
     {% endfor %}
