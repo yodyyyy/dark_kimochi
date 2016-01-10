@@ -10,7 +10,7 @@ tags:
 ---
 
 
-Malem" gini mumpung baru kelar ngedesain blog baru ini, apalagi baru pertama kali gua mulai ngeblog.
+
 
 Sekarang gua mau ngeshare gimana cara install DTS Studio Sound di Conexant apapun.&nbsp;
 
