@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Nekopara vol. 2 Trailer"
+title:  "Cara install DTS Studio Sound untuk semua soundcard Conexant"
 date:   2015-12-28 01:00:00 +0000
-categories: web
+categories: software
 tags:
-- visual novel
+- tweak
+- windows
+- audio
 ---
 
 
@@ -15,7 +17,7 @@ Sekarang gua mau ngeshare gimana cara install DTS Studio Sound di Conexant apapu
 Menurut analisa gua, ini DTS lumayan mantep audionya dibanding bawaan. Laptop gua <a title="ASUS">SNSV</a> X450LC, dengan driver MaxxAudio, tapi yah mungkin telinga gak cocok sama itu Maxx, jadi pasang yang DTS.
 [[MORE]]
 
-Penampakannya kaya gini nih
+Penampakannya kaya gini nih<br>
 ![image](https://36.media.tumblr.com/26ee42e9ced58bbc40640d700cc939a0/tumblr_inline_nxx2h9q9Vp1tyjkfb_540.png)![image](https://41.media.tumblr.com/25ff6520c0026c954730d560d3b91035/tumblr_inline_nxx2pqCPOF1tyjkfb_540.png)
 
 Nah ini gua embat driver punya <a title="hp">dy</a>&nbsp;, ada bacaanya kan tuh merek.
@@ -36,9 +38,8 @@ Restart dulu PC biar masuk **Startup Settings**
 
 **
 
-Dengan cara klik <b>Restart** dibarengi dengan tombol **Shift**
+Dengan cara klik>Restart** dibarengi dengan tombol **Shift**
 
-</b>
 ![image](https://41.media.tumblr.com/c3e4e96d8c1b1b266a9e46721e8ca7e1/tumblr_inline_nxx3kdgOHw1tyjkfb_540.png)
 
 Nah ntar nongol yang kaya gini nih, trus klik aja **Troubleshoot**&nbsp;
@@ -51,7 +52,7 @@ Selanjutnya klik **Advanced options
 
 ![image](https://41.media.tumblr.com/3f992c4f33862d0ac08f5081ee275b50/tumblr_inline_nxx3ylZGUl1tyjkfb_540.png)
 
-Klik **Startup Settings**
+Klik **Startup Settings**<br>
 ![image](https://41.media.tumblr.com/643f232be0fa3f1a19f4f311d4153f6e/tumblr_inline_nxx449l0071tyjkfb_540.png)
 
 Klik **Restart**
@@ -83,7 +84,7 @@ Gimana cara dapetin itu Hardware Id?
 
 Buka **Sounds** dengan klik kanan **Icon Volume**
 
-Klik kanan pada bagian **Speakers &gt; Properties**
+Klik kanan pada bagian **Speakers &gt; Properties**<br>
 ![image](https://41.media.tumblr.com/472d6845d98b615dc49b5666f49105cf/tumblr_inline_nxx52hgW171tyjkfb_540.png)
 
 Trus klik lagi **Properties**. ntar nongol dah Conexant SmartAudio HD Properties
@@ -92,14 +93,14 @@ Arahkan ke tab **Details**, lalu ubah **Property **menjadi **Hardware Ids**
 
 Nongol dah tuh **Hardware Ids**&nbsp;nya. Kan valuenya ada 2 tuh, pilih aja yang kedua
 
-Klik kanan **copy&nbsp;**
+Klik kanan **copy&nbsp;**<br>
 ![image](https://40.media.tumblr.com/591a3c14a60d6d29fc71b400ae94fc73/tumblr_inline_nxx5a0p99n1tyjkfb_540.png)
 
 Jeng-jeng, udah dapet dah Hardware Idnya
 
 Selanjutnya buka file **chdrt.inf** yang tadi.
 
-Lalu arahkan aja kesini.
+Lalu arahkan aja kesini.<br>
 ![image](https://41.media.tumblr.com/a7e163d7402ad2f1b68a440d37ad1bf9/tumblr_inline_nxx5eikaGB1tyjkfb_540.png)
 
 Chotto matte kudasai, berhubung laptop gua driver pake mic 1DMIC jadi gw pake itu. Kalo buat laptop yang lain bisa dicek di driver Conexant bawaan laptopnya.
@@ -134,10 +135,10 @@ Udah kesimpen kan, sekarang tahap instalasinya
 
 Buka yang tadi **Conexant SmartAudio HD Properties**, klik tab General, habis itu klik **Change Settings**
 
-Masuk ke tab **Driver**, klik **Update Driver**
+Masuk ke tab **Driver**, klik **Update Driver**<br>
 ![image](https://40.media.tumblr.com/01bc97f48499412426fa6e00a0e34dc5/tumblr_inline_nxx67h5CFg1tyjkfb_540.png)
 
-Klik Browse my computer for driver software
+Klik Browse my computer for driver software<br>
 ![image](https://41.media.tumblr.com/badbc3112a468bcb86e19514e850ad9b/tumblr_inline_nxx68yEDuf1tyjkfb_540.png)
 
 Terus klik **Let me pick** from blablabla.....
@@ -147,7 +148,7 @@ Lalu klik **Have Disk**
 Arahkan ke folder tadi dan cari **chdrt.inf **&gt; klik **Open **&gt; **Ok**
 ![image](https://40.media.tumblr.com/6fad6d1f72523cf9a47864f2a3fc44ad/tumblr_inline_nxx6cwRSus1tyjkfb_540.png)
 
-Klik **Next**
+Klik **Next**<br>
 ![image](https://36.media.tumblr.com/6e065ecfa8e64f223027665db942cb96/tumblr_inline_nxx6e36gjt1tyjkfb_540.png)
 
 Pas lagi install ntar muncul kaya gini, klik aja **Install this driver software anyway**
