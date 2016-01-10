@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cara install DTS Studio Sound untuk semua soundcard Conexant"
-date:   2015-12-28 01:00:00 +0000
+date:   2016-01-10 01:00:00 +0700
 categories: software
 tags:
 - tweak
