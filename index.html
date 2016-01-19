@@ -27,15 +27,15 @@ layout: default
   <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">&lt; Previous</a>
   {% else %}
-    <span class="previous" align="left">Previous</span>
+    <span class="previous" align="left">&lt; Previous</span>
   {% endif %}
   
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="next">Next &gt;</a>
   {% else %}
-    <span class="next" align="right">Next</span>
+    <span class="next" align="right">Next &gt;</span>
   {% endif %}
 </div>
 
