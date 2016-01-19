@@ -12,7 +12,7 @@ categories:
 - project
 
 image: 
-    url: http://spaghetti-sangithubio-pherrykun.c9users.io/image/img01.jpg
+    url: http://spaghetti-san.github.io/image/img01.jpg
 ---
 
 
