@@ -64,9 +64,7 @@ permalink: /project/
     {% for post in site.posts %}
       {% if post.categories contains 'project' %}
             <div class="wf-box">
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-original="{{post.image.url}}" style="
-          background: rgba(232, 232, 232, 0.22) url(http://dictionary.cambridge.org/utilities/2015-11-23-1646/external/images/spinner.gif) no-repeat -63px -55px;
-">
+          <img src="/image/loading.gif" data-original="{{post.image.url}}" style="min-height:6em">
                 <div class="content">
                     <h3 style="padding: 5px 8px; margin-bottom:0;
     background-color: #efefef;">{{ post.title }}</h3>

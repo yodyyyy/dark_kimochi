@@ -47,7 +47,15 @@
 
 </footer>
 
-
+<script src="/js/responsive_waterfall.js"></script>
+<script>
+  // use querySelector/querySelectorAll internally
+var waterfall = new Waterfall({ 
+    containerSelector: '.wf-container',
+    boxSelector: '.wf-box',
+    minBoxWidth: 180
+});
+</script>
 <!--- Where Javascript Loaded --->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.js"></script>
@@ -61,15 +69,7 @@ $(function() {
 });
 </script>
 
-<script src="/js/responsive_waterfall.js"></script>
-<script>
-  // use querySelector/querySelectorAll internally
-var waterfall = new Waterfall({ 
-    containerSelector: '.wf-container',
-    boxSelector: '.wf-box',
-    minBoxWidth: 180
-});
-</script>
+
  <script type="text/javascript">
    $(function() {
     $(document).pjax('a', 'body', { 
