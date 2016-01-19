@@ -7,6 +7,9 @@ tags:
 - project
 - codeigniter
 - web
+
+categories:
+- project
 ---
 
 

@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://spaghetti-san.github.io" # the base hostname & protocol for your site
 twitter_username: axlyody
 github_username:  spaghetti-san
-facebook_username:  profile.php?id=100007594726461
+facebook_username:  axlyody
 
 # Gems
 gems: [jekyll-paginate]

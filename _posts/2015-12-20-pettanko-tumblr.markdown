@@ -6,6 +6,8 @@ categories: themes
 tags:
 - tumblr
 - themes
+categories:
+- project
 ---
 
 

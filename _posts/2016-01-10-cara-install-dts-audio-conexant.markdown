@@ -7,6 +7,7 @@ tags:
 - tweak
 - windows
 - audio
+
 ---
 
 
@@ -108,7 +109,7 @@ Chotto matte kudasai, berhubung laptop gua driver pake mic 1DMIC jadi gw pake it
 Dengan cara hampir sama seperti mengecek Hardware Id, tetapi untuk Property kita arahkan ke **Inf Section** kaya gini.
 ![image](https://36.media.tumblr.com/1722e66a5ebd70ba43b6511174c11095/tumblr_inline_nxx5sv5VEY1tyjkfb_540.png)
 
-Buat ngemasukin hardware id kita cocokin aja misal ada 1DMICnya
+Buat ngemasukin hardware id kita cocokin aja misal ada 1DMICnya<br>
 ![image](https://40.media.tumblr.com/66f82d1143d658dedccdd882e067cb21/tumblr_inline_nxx5x6dUIF1tyjkfb_540.png)
 
 Memasukannya seperti ini

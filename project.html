@@ -1,0 +1,105 @@
+---
+layout: default
+title: Project
+permalink: /project/
+
+---
+
+<style>
+.wf-container { margin: 0 auto; }
+
+.wf-container:before,
+.wf-container:after {
+  content: '';
+  display: table;
+}
+
+.wf-container:after { clear: both; }
+
+.wf-box {
+  border: 1px solid #e8e8e8;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.wf-box img {
+  display: block;
+  width: 100%;
+}
+
+.wf-box .content {
+  
+  border-top-width: 0;
+}
+
+.wf-column { float: left; }
+
+
+@media screen and (min-width: 768px) {
+
+.wf-container { width: 750px; }
+
+}
+
+@media screen and (min-width: 992px) {
+
+.wf-container { width: 970px; }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.wf-container { width: 960px; }
+
+}
+</style>
+
+
+
+<div class="row">
+<h1 class="page-heading"></h1>
+<div class="wf-container">
+  
+  
+    {% for post in site.posts %}
+      {% if post.categories contains 'project' %}
+            <div class="wf-box">
+                {% assign foundImage = 0 %}
+      {% assign images = post.content | split:"<img " %}
+      {% for image in images %}
+        {% if image contains 'src' %}
+
+            {% if foundImage == 0 %}
+                {% assign html = image | split:"/>" | first %}
+                <img {{ html }} />
+                {% assign foundImage = 1 %}
+            {% endif %}
+        {% endif %}
+      {% endfor %}
+                <div class="content">
+                    <h3 style="padding: 5px 8px; margin-bottom:0;
+    background-color: #efefef;">{{ post.title }}</h3>
+                    <p style="padding: 5px 8px;">{{ post.date | date_to_string }}</p>    
+                </div>
+            </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      {% endif %}        
+    {% endfor %}        
+             </div>
+
+
+<br><br><br><br>
+
+
+
+
+
+
+</div>
