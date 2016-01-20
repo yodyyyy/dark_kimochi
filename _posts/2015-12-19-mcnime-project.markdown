@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "M.C Nime Website"
-date:   2015-12-19 01:00:00 +0000
+date:   2015-12-19 14:30:00 +0700
 categories: web
 tags:
 - project

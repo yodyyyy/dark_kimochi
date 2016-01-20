@@ -16,7 +16,7 @@ tags:
 Sekarang gua mau ngeshare gimana cara install DTS Studio Sound di Conexant apapun.&nbsp;
 
 Menurut analisa gua, ini DTS lumayan mantep audionya dibanding bawaan. Laptop gua <a title="ASUS">SNSV</a> X450LC, dengan driver MaxxAudio, tapi yah mungkin telinga gak cocok sama itu Maxx, jadi pasang yang DTS.
-[[MORE]]
+
 
 Penampakannya kaya gini nih<br>
 ![image](https://36.media.tumblr.com/26ee42e9ced58bbc40640d700cc939a0/tumblr_inline_nxx2h9q9Vp1tyjkfb_540.png)![image](https://41.media.tumblr.com/25ff6520c0026c954730d560d3b91035/tumblr_inline_nxx2pqCPOF1tyjkfb_540.png)
