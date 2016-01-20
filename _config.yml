@@ -20,7 +20,7 @@ facebook_username:  axlyody
 gems: [jekyll-paginate]
 
 # Config
-paginate: 3
+paginate: 5
 paginate_path: "page/:num"
 # Build settings
 markdown: kramdown
