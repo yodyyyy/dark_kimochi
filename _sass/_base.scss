@@ -246,13 +246,14 @@ pre {
     color: #828282;
 }  
 .tags-pagee {
-        border-bottom: 1px solid #e8e8e8;
-    padding: 0 0 70px;
+    border-bottom: 1px solid #e8e8e8;
+    height: auto;
+    display: inline-block;
 }
  @media screen and (min-width: 47.5em) {
 .tags-pagee {
         border-bottom: 1px solid #e8e8e8;
-    padding: 0 0 40px;
+    padding: 0 0 15px;
 }
 .tags-date {
     float: right;
@@ -290,7 +291,7 @@ pre {
     color: $grey-color;
 }
 .pagination {
-    padding-bottom:40px;
+    padding-bottom: 70px;
 }
 
 }

@@ -49,9 +49,39 @@
 
 
 <!--- Where Javascript Loaded --->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script type="text/javascript" src="/js/jquery-autocomplete.js"></script>
+<script>
+var options = {
+
+  url: "/gblk.json",
+
+  getValue: "title",
+
+
+   list: {
+		match: {
+			enabled: true
+		}
+	},
+  
+    template: {
+        type: "links",
+        fields: {
+            link: "url"
+        }
+        
+    },
+  
+
+  theme: "square"
+};
+
+$("#countries").easyAutocomplete(options);
+</script>
+
 <script src="/js/responsive_waterfall.js"></script>
 <script>
   // use querySelector/querySelectorAll internally
