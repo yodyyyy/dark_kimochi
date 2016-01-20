@@ -1,4 +1,4 @@
-# Spaghetti Blog Theme
+# spaghetti.ga
 Base of Jekyll default theme and redesign again by me.<br>
 Feel free to use this theme :^)
 <br><br>
