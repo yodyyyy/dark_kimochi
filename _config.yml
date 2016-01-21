@@ -17,7 +17,9 @@ github_username:  spaghetti-san
 facebook_username:  axlyody
 
 # Gems
-gems: [jekyll-paginate]
+gems: 
+- jekyll-archives
+- jekyll-paginate
 
 # Config
 paginate: 5
