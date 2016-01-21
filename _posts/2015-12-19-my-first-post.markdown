@@ -9,6 +9,5 @@ tags:
 
 
 Hello, this is my first post.
-My project will be posted soon ;)
 
 
