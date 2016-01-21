@@ -24,9 +24,37 @@
     }
 }
 
+
 .site-nav {
     float: right;
     line-height: 56px;
+
+    a.page-link {
+      position: relative;
+          -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    
+    a.page-link:after{
+    	content: '';
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	height: 0px;
+    	width: 100%;
+    	top:36px;
+    	border-bottom: 3px solid transparent; 
+    	transition: 0.5s ease;
+    	-webkit-transition: all ease 0.5s;
+    	-moz-transition: all ease 0.5s;
+    	transition: all ease 0.5s;
+    }
+    
+    a.page-link:hover:after {
+      border-bottom: 2px solid black;
+    }
 
     .menu-icon {
         display: none;
@@ -50,6 +78,10 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+        
+        a.page-link:hover:after {
+           border-bottom: 2px solid transparent;
+        }
 
         .menu-icon {
             display: block;
@@ -241,33 +273,7 @@
     }
 }
 
-a.page-link {
-    position: relative;
-        -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-}
-a.page-link:after{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 0px;
-	width: 100%;
-	top:36px;
-	border-bottom: 3px solid transparent; 
-	transition: 0.5s ease;
-	-webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
-	transition: all ease 0.5s;
-}
-a.page-link:hover:after {
-    
-   border-bottom: 2px solid black;
-    
-   
-}
+
 
 .videoWrapper {
 	position: relative;
