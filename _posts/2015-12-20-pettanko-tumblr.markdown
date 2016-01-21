@@ -9,7 +9,7 @@ tags:
 categories:
 - project
 image:
- url: http://spaghetti-san.github.io/image/iptum.jpg
+ url: http://spaghetti-san.github.io/assets/image/iptum.jpg
 
 
 ---
@@ -18,9 +18,9 @@ image:
 
 Demo: [http://flatten01.tumblr.com](http://flatten01.tumblr.com)
 
-![Desktop](http://spaghetti-san.github.io/image/1.jpg)
+![Desktop](http://spaghetti-san.github.io/assets/image/1.jpg)
 
-![Mobile](http://spaghetti-san.github.io/image/2.png)
+![Mobile](http://spaghetti-san.github.io/assets/image/2.png)
 
 
 
