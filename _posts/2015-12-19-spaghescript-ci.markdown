@@ -23,6 +23,10 @@ SpagheScript CMS based on CodeIgniter for building an Anime and Manga website.
 
 > Warning: This script has a lot of bugs, and it is not recommended for using this as production site.
 
+## Server Requirements
+- PHP version 5.4 or newer is recommended
+- MySQL (5.1+) via the mysql (deprecated), mysqli and pdo drivers
+
 ## Features Included
 - Anime Streaming
 - Manga Reader
