@@ -31,7 +31,7 @@ layout: default
         <p class="post-date"><i class="typico typcn typcn-messages" style="    font-size: 28px;
     position: relative;
     top: 1px;
-    font-size:15px"></i> <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" style="color:#828282"> 0 Comment</a></p>
+    font-size:15px"></i> <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" style="color:#828282" data-disqus-identifier="{{post.id}}"> 0 Comments</a></p>
     </footer>
 </article>
     {% endfor %}
