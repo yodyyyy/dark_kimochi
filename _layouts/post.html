@@ -9,7 +9,7 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     
     
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="fa fa-calendar-minus-o"></i> {{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} 
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="typcn typcn-calendar-outline"></i> {{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} 
     
     
 
@@ -19,7 +19,7 @@ layout: default
     {% assign tags = page.tags %}
   {% endif %}
   {% for tag in tags %}
-  <a href="/tags/#{{tag|slugize}}" style="color: #828282;"><i class="fa fa-hashtag"></i> {{tag}}</a>{% unless forloop.last %} {% endunless %}
+  <a href="/tags/#{{tag|slugize}}" style="color: #828282;"><i class="typcn typcn-tags"></i> {{tag}}</a>{% unless forloop.last %} {% endunless %}
   {% endfor %}
   
  
@@ -44,13 +44,19 @@ layout: default
  
 {% if page.previous.url %} 
 <div class="arrowLeft">
-<a href="{{page.previous.url}}" title="{{page.previous.title}}"><i class="fa fa-chevron-left"></i></a>
+<a href="{{page.previous.url}}" title="{{page.previous.title}}"><i class="typcn typcn-chevron-left" style="    font-size: 65px;
+    position: relative;
+   
+    "></i></a>
 </div>
 {% endif %}
 
 {% if page.next.url %} 
 <div class="arrowRight" style="float:right">
-<a href="{{page.next.url}}" title="{{page.next.title}}"><i class="fa fa-chevron-right"></i></a>
+<a href="{{page.next.url}}" title="{{page.next.title}}"><i class="typcn typcn-chevron-right" style="    font-size: 65px;
+    position: relative;
+   
+    "></i></a>
 </div>
 {% endif %}
 </div>

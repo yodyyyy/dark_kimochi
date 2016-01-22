@@ -20,9 +20,18 @@ layout: default
     <footer class="post-meta">
         
         
-        <p class="post-tags">{% include post-tags.html %}</p>
-        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}"><i class="fa fa-calendar-minus-o"></i> {{ post.date | date: "%b %-d, %Y" }}</time>
-        <p class="post-date"><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{post.id}}"></a></p>
+        <p class="post-tags"><i class="typico typcn typcn-tags" style="    font-size: 28px;
+    position: relative;
+    top: 1px;
+    font-size:15px"></i> {% include post-tags.html %}</p>
+        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}"><i class="typico typcn typcn-calendar-outline" style="    font-size: 28px;
+    position: relative;
+    top: 1px;
+    font-size:15px"></i> {{ post.date | date: "%b %-d, %Y" }}</time>
+        <p class="post-date"><i class="typico typcn typcn-messages" style="    font-size: 28px;
+    position: relative;
+    top: 1px;
+    font-size:15px"></i> <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" style="color:#828282"> 0 Comment</a></p>
     </footer>
 </article>
     {% endfor %}
@@ -31,15 +40,27 @@ layout: default
   <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">&lt; Previous</a>
+    <a href="{{ paginator.previous_page_path }}" class="previous"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px;
+    position: relative;
+   
+    "></i> Previous</a>
   {% else %}
-    <span class="previous" align="left">&lt; Previous</span>
+    <span class="previous" align="left"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px;
+    position: relative;
+    
+    "></i> Previous</span>
   {% endif %}
   
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next &gt;</a>
+    <a href="{{ paginator.next_page_path }}" class="next">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px;
+    position: relative;
+  
+    "></i></a>
   {% else %}
-    <span class="next" align="right">Next &gt;</span>
+    <span class="next" align="right">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px;
+    position: relative;
+    
+    "></i></span>
   {% endif %}
 </div>
 
