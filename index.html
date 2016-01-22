@@ -22,6 +22,7 @@ layout: default
         
         <p class="post-tags">{% include post-tags.html %}</p>
         <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}"><i class="fa fa-calendar-minus-o"></i> {{ post.date | date: "%b %-d, %Y" }}</time>
+        <p class="post-date"><a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{post.id}}"></a></p>
     </footer>
 </article>
     {% endfor %}
