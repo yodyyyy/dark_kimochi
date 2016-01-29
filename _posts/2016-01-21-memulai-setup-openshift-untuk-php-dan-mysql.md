@@ -8,7 +8,9 @@ tags:
 - web
 - cloud
 - tutorial
-image: /images/default-thumb.png
+
+image: 
+    url: /assets/image/openshift.jpg
 ---
 
 

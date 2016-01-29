@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SpagheScipt for Anime and Manga sites"
+title:  "SpagheScipt CMS"
 date:   2015-12-19 14:30:00 +0700
 categories: web
 tags:

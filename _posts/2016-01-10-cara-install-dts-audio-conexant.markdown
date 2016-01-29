@@ -8,6 +8,8 @@ tags:
 - windows
 - audio
 - tutorial
+image: 
+    url: https://36.media.tumblr.com/26ee42e9ced58bbc40640d700cc939a0/tumblr_inline_nxx2h9q9Vp1tyjkfb_540.png
 ---
 
 

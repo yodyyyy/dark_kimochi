@@ -11,13 +11,17 @@ layout: default
  
     {% for post in paginator.posts %}
      <article class="post tag-speeches">
+         <div style="padding: 20px;">
     <header class="post-header">
         <h2 class="post-title"><a id="route" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
     </header>
     <section class="post-excerpt">
         <p>{{ post.content | strip_html | truncatewords:45}} <a id="route" class="read-more" href="{{ post.url | prepend: site.baseurl }}">»</a></p>
     </section>
-    <footer class="post-meta">
+    
+    </div>
+    <footer class="post-meta" style="    background: #00bc8c;
+    padding: 10px 0 0px 20px;">
         
         
         <p class="post-tags"><i class="typico typcn typcn-tags" style="    font-size: 28px;
@@ -31,7 +35,7 @@ layout: default
         <p class="post-date"><i class="typico typcn typcn-messages" style="    font-size: 28px;
     position: relative;
     top: 1px;
-    font-size:15px"></i> <a id="route" class="disqus-comment-count"  href="{{ post.url | prepend: site.baseurl }}#disqus_thread" style="color:#828282"> 0 Comments</a></p>
+    font-size:15px"></i> <a id="route" class="disqus-comment-count"  href="{{ post.url | prepend: site.baseurl }}#disqus_thread" style="color:#fff"> 0 Comments</a></p>
     </footer>
 </article>
     {% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pettanko Tumblr Theme"
+title:  "Pettanko Theme for Tumblr"
 date:   2015-12-20 01:00:00 +0700
 categories: themes
 tags:

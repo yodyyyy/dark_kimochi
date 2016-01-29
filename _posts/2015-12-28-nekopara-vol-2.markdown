@@ -5,6 +5,8 @@ date:   2015-12-28 01:00:00 +0000
 categories: web
 tags:
 - visual novel
+image:
+    url: /assets/image/nekopara.jpg
 ---
 
 
