@@ -387,7 +387,7 @@ ul {
 }
 
 .site-header {
-    height: 55px;
+    height: 50px;
     position: relative;
     background: #375a7f;
     position: fixed;
@@ -395,12 +395,13 @@ ul {
     top: 0;
     z-index: 2000;
     width: 100%;
+    border-bottom: 2px solid #1D344C;
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 56px;
+    line-height: 50px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -413,7 +414,7 @@ ul {
 
 .site-nav {
     float: right;
-    line-height: 55px;
+    line-height: 50px;
 }
 
 .site-nav a.page-link {
@@ -430,9 +431,8 @@ ul {
 .site-nav a.page-link:hover {
     /* width: 100%; */
     /* transition: 0.5s linear; */
-    -webkit-transition: all ease-in 0.1s;
-    -moz-transition: all ease-in 0.1s;
-    transition: all ease-in 0.1s;
+    /* -webkit-transition: all ease-in 0.1s; */
+    /* transition: all ease-in 0.1s; */
     background: #1F3F61;
 }
 
@@ -457,15 +457,54 @@ ul {
 .trigger .active {
     background: #1F3F61;
 }
+.easy-autocomplete input {
+    border-color: #3E3E3E;
+    border-style: solid;
+    border-width: 1px;
+    color: #555;
+    float: none;
+    padding: 6px 12px;
+    min-width: 293px;
+    background-color: #3E3E3E;
+    color: #fff;
+    padding: 0 0px 12px 0px;
+    outline: none;
+}
+.easy-autocomplete-container {
+    left: -15px;
+    position: absolute;
+    width: 100%;
+    z-index: 1099;
+    min-width: 319px;
+}
+
+.inpost-header {
+    background: #00bc8c;
+    padding: 15px 20px 20px 20px;
+    height: 30px;
+}
+.inpost-title {
+        font-size: 25px;
+    letter-spacing: -1px;
+    float: left;
+}
+.comment-postingatas {
+    position: relative;
+    top: 0px;
+    font-size: 25px;
+}
 
 @media screen and (max-width: 600px) {
+    .site-header {
+        height: 50px;
+    }
     .site-nav {
         position: absolute;
-        top: 9px;
+        top: 15px;
         right: 15px;
-        background-color: #fdfdfd;
-        border: 1px solid #e8e8e8;
-        border-radius: 5px;
+        /* background-color: #fdfdfd; */
+        /* border: 1px solid #e8e8e8; */
+        /* border-radius: 5px; */
         text-align: right;
     }
     .site-nav a.page-link:hover:after {
@@ -477,8 +516,9 @@ ul {
         width: 36px;
         height: 26px;
         line-height: 0;
-        padding-top: 10px;
+        padding-top: 5px;
         text-align: center;
+        color: #fff;
     }
     .site-nav .menu-icon>svg {
         width: 18px;
@@ -490,8 +530,20 @@ ul {
         padding-bottom: 5px;
         z-index: 999;
         position: relative;
-        background-color: #fdfdfd;
+        background-color: #375A7F;
+        top: 15px;
     }
+    .trigger:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #375A7F transparent;
+    position: absolute;
+    top: -8px;
+    right: 10px;
+}
     .site-nav .page-link {
         display: block;
         padding: 5px 10px;
@@ -500,6 +552,43 @@ ul {
     .site-nav .page-link:not(:last-child) {
         margin-right: 0;
     }
+    
+    
+    
+    .post {
+
+    padding-bottom: 0;
+
+    background: #3E3E3E;
+
+    }
+    
+    .easy-autocomplete input {
+        min-width: 0;
+    }
+    .easy-autocomplete-container {
+    min-width:200px;
+    }
+    .inpost-header {
+    background: #00bc8c;
+    padding: 10px 10px 5px 15px;
+    height: 30px;
+}
+.inpost-title {
+        font-size: 17px;
+        letter-spacing: -1px;
+        float: left;
+}
+
+
+.comment-postingatas {
+    position: relative;
+    top: 0px;
+    font-size: 17px;
+}
+
+    
+    
 }
 
 .site-footer {
@@ -568,7 +657,7 @@ ul {
 .page-content {
     padding-bottom: 30px;
     background: #222222;
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 .page-heading {
@@ -603,16 +692,6 @@ ul {
     /* background-color: #375a7f; */
 }
 
-.inpost-header {
-    background: #00bc8c;
-    padding: 15px 20px 20px 20px;
-    height: 30px;
-}
-.inpost-title {
-        font-size: 25px;
-    letter-spacing: -1px;
-    float: left;
-}
 
 .post-title {
     font-size: 25px;
@@ -686,12 +765,14 @@ ul {
     height: 0;
     width: 0;
     position: relative;
-    margin-left: 65px;
+    margin-left: 35px;
     z-index: 0;
+    top: -2px;
+    background: #1F3F61;
 }
 
 .pace-inactive {
-    display: none;
+    /* display: none; */
 }
 
 .pacel .pace-progress {
@@ -701,6 +782,10 @@ ul {
     margin-right: auto;
     margin-left: auto;
     padding-right: 30px;
+    background: #1F3F61;
+    /* -webkit-transition: all 0.2s; */
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
 }
 
 .pacel .pace-progress-inner {
@@ -730,12 +815,13 @@ ul {
     border-top-color: #fff;
     /* border-left-color: rgba(255, 255, 255, 0.14); */
     border-radius: 10px;
-    -webkit-animation: pace-spinner 400ms linear infinite;
-    -moz-animation: pace-spinner 400ms linear infinite;
-    -ms-animation: pace-spinner 400ms linear infinite;
-    -o-animation: pace-spinner 400ms linear infinite;
-    animation: pace-spinner 400ms linear infinite;
+    -webkit-animation: pace-spinner 1s linear infinite;
+    -moz-animation: pace-spinner 1s linear infinite;
+    -ms-animation: pace-spinner 1s linear infinite;
+    -o-animation: pace-spinner 1s linear infinite;
+    animation: pace-spinner 1s linear infinite;
     margin-left: 85px;
+    background: #1F3F61;
 }
 
 @-webkit-keyframes pace-spinner {
@@ -1337,19 +1423,7 @@ ul {
     left: 10px;
 }
 
-.easy-autocomplete input {
-    border-color: #3E3E3E;
-    border-style: solid;
-    border-width: 1px;
-    color: #555;
-    float: none;
-    padding: 6px 12px;
-    min-width: 293px;
-    background-color: #3E3E3E;
-    color: #fff;
-    padding: 0 0px 12px 0px;
-    outline: none;
-}
+
 
 .easy-autocomplete input:hover,
 .easy-autocomplete input:focus {
@@ -1663,13 +1737,7 @@ ul {
     padding: 6px 12px;
 }
 
-.easy-autocomplete-container {
-    left: -15px;
-    position: absolute;
-    width: 100%;
-    z-index: 1099;
-    width: 319px;
-}
+
 
 .easy-autocomplete-container ul {
     background: none repeat scroll 0 0 #00bc8c;
@@ -1751,6 +1819,7 @@ ul {
     font-size: 28px;
     position: relative;
     top: 3px;
+    color:#fff;
 }
 
 .highlight {

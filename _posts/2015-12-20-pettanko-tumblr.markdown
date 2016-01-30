@@ -9,7 +9,7 @@ tags:
 categories:
 - project
 image:
- url: http://spaghetti-san.github.io/assets/image/iptum.jpg
+ url: /assets/image/pettanko_thumb.jpg
 
 
 ---
