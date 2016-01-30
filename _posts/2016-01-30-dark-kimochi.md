@@ -28,7 +28,7 @@ image:
 2. Clone this jekyll site to your new folder
 <pre>
 <code>
-https://github.com/spaghetti-san/spaghetti-san.github.io.git
+git clone https://github.com/spaghetti-san/spaghetti-san.github.io.git
 </code>
 </pre>
 3. Replace my _posts folder with a backup folder of your site, and feel free to customize with your taste
