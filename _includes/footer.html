@@ -77,7 +77,7 @@ $(document).ready(function() {
         $(".more").click(function() {
             var element = $(this);
             var msg = element.attr("id");
-            $("#morebutton").html('<img src="ajax-loader.gif" />');
+            $("#load_article").html('<img src="ajax-loader.gif" />');
 
             $.ajax({
                 type: "POST",
@@ -103,3 +103,12 @@ $(document).ready(function() {
 $(document).ready(function(){$(".menu-icon").click(function(){$(".trigger").toggle()})}),$(function(){$(document).pjax("#route","body",{fragment:"body",timeout:1e5,scrollTo:0,push:!0,maxCacheLength:20,replace:!1})}),$(document).on("pjax:error",function(e,n,t,o,c){return c.success(n.responseText,t,n),!1});var options={url:"/gblk.json",getValue:"title",list:{match:{enabled:!0,maxNumberOfElements:5}},template:{type:"links",fields:{link:"url"}},theme:"square"};$("#countries").easyAutocomplete(options),Pace.on("start",function(){$(".pacel").show()}),Pace.on("done",function(){$(".pacel").hide()}),$(function(){$("img").lazyload({})});var waterfall=new Waterfall({containerSelector:".wf-container",boxSelector:".wf-box",minBoxWidth:180});$(document).ready(function(){$(".menu-icon").click(function(){$(".trigger").toggle()})});
 </script>
 <script id="dsq-count-scr" src="//spaghettisan.disqus.com/count.js" async></script>
+ <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+  <script>
+    OneSignal.LOGGING = true;
+    var OneSignal = OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "40131ddd-604a-4199-b43c-2135c93f689f",
+      subdomainName: 'spaghettisan'
+    }]);
+  </script>
