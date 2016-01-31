@@ -70,6 +70,33 @@ $(document).ready(function() {
 <script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
 <script src="/assets/js/responsive_waterfall.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+<script type="text/javascript">
+    $(function() {
+        $(".more").click(function() {
+            var element = $(this);
+            var msg = element.attr("id");
+            $("#morebutton").html('<img src="ajax-loader.gif" />');
+
+            $.ajax({
+                type: "POST",
+                url: "more_ajax.php",
+                data: "lastmsg=" + msg,
+                cache: false,
+                success: function(html) {
+
+                    $("#more_updates").append(html);
+                    $(".more").remove();
+
+                }
+            });
+            return false;
+        });
+    });
+</script>
+
+
 <script>
 
 
