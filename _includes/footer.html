@@ -109,6 +109,14 @@ $(function() {
   load: { head: 'base, meta, link', css: true, script: true },
   cache: { click: true, submit: false, popstate: true }
 });
+$(document).bind('pjax:fetch', function () {
+  $('.page-content').fadeOut(500);
+
+});
+$(document).bind('pjax:render', function(){
+  $('.page-content').fadeIn(500);
+
+});
 
  Pace.on("done", function() {
     $(".pacel").hide()
