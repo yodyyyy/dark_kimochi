@@ -107,7 +107,7 @@ $(function() {
    $.pjax({
   area: 'body',
   load: { head: 'base, meta, link', css: true, script: true },
-  cache: { click: true, submit: false, popstate: true }
+  
 });
 $(document).bind('pjax:fetch', function () {
   $('.page-content').fadeOut(500);
