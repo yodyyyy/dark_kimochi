@@ -107,7 +107,7 @@ $(function() {
    $.pjax({
   area: 'body',
   load: { head: 'base, meta, link', css: true, script: true },
-  cache: { click: false, submit: false, popstate: false }
+  cache: { click: true, submit: false, popstate: true }
 });
 
  Pace.on("done", function() {
