@@ -15,6 +15,7 @@ url: "http://spaghetti.ga" # the base hostname & protocol for your site
 twitter_username: axlyody
 github_username:  spaghetti-san
 facebook_username:  axlyody
+disqus_id: spaghettisan.disqus.com
 
 # Gems
 gems: 
