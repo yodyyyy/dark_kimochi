@@ -23,7 +23,7 @@
           {% endunless %}
           {% endif %}
         {% endfor %}
-        <a class="page-link" href="{{ site.url }}/feed.xml"> Feeds</a>
+        <a class="page-link" href="{{ site.url | append: site.baseurl }}/feed.xml"> Feeds</a>
         <a class="page-link" href="http://github.com/{{ site.github_username }}?tab=repositories"><i class="typico typcn typcn-social-github" style="font-size:"></i> Repositories</a>
       </div>
     </nav>

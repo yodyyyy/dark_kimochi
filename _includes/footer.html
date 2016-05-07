@@ -42,12 +42,12 @@
 </footer>
 <!--- Where Javascript Loaded --->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery-pjax.js"></script>
-<script type="text/javascript" src="/assets/js/jquery-preload.js"></script>
-<script type="text/javascript" src="/assets/js/jquery-tooltipster.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/jquery-pjax.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/jquery-preload.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/jquery-tooltipster.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-<script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
-<script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/jquery-autocomplete.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/responsive_waterfall.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 <script id="dsq-count-scr" src="//spaghettisan.disqus.com/count.js" async></script>
 <script>
@@ -79,7 +79,7 @@ $.preload({
     }, 2e3)
 });
 $(document).ready(function() {
-    "/" != location.pathname ? $('.trigger a[href^="/' + location.pathname.split("/")[1] + '"]').addClass("active") : $(".none a:eq(0)").addClass("active")
+    "{{site.baseurl}}/" != location.pathname ? $('.trigger a[href^="' + location.pathname + '"]').addClass("active") : $(".none a:eq(0)").addClass("active")
 }), $(document).ready(function() {
     $(".tooltip-right").tooltipster({
         contentAsHTML: !0,
@@ -101,7 +101,7 @@ $(document).ready(function() {
     $("img").lazyload({})
 });
 var options = {
-    url: "/gblk.json",
+    url: "{{ "/gblk.json" | prepend: site.baseurl }}",
     getValue: "title",
     list: {
         match: {

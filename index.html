@@ -49,7 +49,7 @@ layout: default
   <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a id="route" href="{{ paginator.previous_page_path }}" class="previous"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px;
+    <a id="route" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px;
     position: relative;
    
     "></i> Previous</a>
@@ -61,7 +61,7 @@ layout: default
   {% endif %}
   
   {% if paginator.next_page %}
-    <a id="route" href="{{ paginator.next_page_path }}" class="next">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px;
+    <a id="route" href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px;
     position: relative;
   
     "></i></a>

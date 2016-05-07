@@ -37,7 +37,7 @@ layout: default
  
 {% if page.next.url %} 
 <div class="arrowLeft">
-<a id="route" class="tooltip-right" href="{{page.next.url}}" title="
+<a id="route" class="tooltip-right" href="{{page.next.url | prepend: site.baseurl}}" title="
 &lt;p class=hoveratas&gt;{{page.next.title}}&lt;/p&gt; &lt;p class=hoverbawah&gt;{{ page.next.content | strip_html | truncatewords:10}}&lt;/p&gt;
 "><i class="typcn typcn-chevron-left" style="    font-size: 30px;
     position: relative;
@@ -48,7 +48,7 @@ layout: default
 
 {% if page.previous.url %} 
 <div class="arrowRight" style="float:right">
-<a id="route" class="tooltip-left" href="{{page.previous.url}}" title="
+<a id="route" class="tooltip-left" href="{{page.previous.url | prepend: site.baseurl}}" title="
 &lt;p class=hoveratas&gt;{{page.previous.title}}&lt;/p&gt; &lt;p class=hoverbawah&gt;{{ page.previous.content | strip_html | truncatewords:10}}&lt;/p&gt;
 "><i class="typcn typcn-chevron-right" style="    font-size: 30px;
     position: relative;
