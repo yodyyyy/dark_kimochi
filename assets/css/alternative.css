@@ -20,7 +20,7 @@ figure {
 
 @font-face {
     font-family: gidole;
-    src: url(/assets/font/gidole.otf);
+    src: url(../font/gidole.otf);
 }
 
 body {

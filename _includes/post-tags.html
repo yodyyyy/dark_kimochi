@@ -4,5 +4,5 @@
     {% assign tags = page.tags %}
   {% endif %}
   {% for tag in tags %}
-  <a id="route" href="/tags.html#{{tag|slugize}}"> {{tag}}</a>{% unless forloop.last %} {% endunless %}
+  <a id="route" href="{{ "/tags.html#" | append: tag|slugize | prepend: site.baseurl }}"> {{tag}}</a>{% unless forloop.last %} {% endunless %}
   {% endfor %}
